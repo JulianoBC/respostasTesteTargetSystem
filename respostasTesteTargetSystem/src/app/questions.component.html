@@ -1,0 +1,6 @@
+<p class="test-title">Este é um teste para a empresa TargetSystem</p>
+<div *ngFor="let item of questions">
+  <p><strong>{{ item.question }}</strong></p>
+  <button (click)="toggleAnswer(item)">{{item.buttonText}}</button>
+  <p *ngIf="item.showAnswer" class="answer-text">{{ item.answer }}</p>
+</div>
